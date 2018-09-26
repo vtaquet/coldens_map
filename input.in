@@ -1,0 +1,9 @@
+species     = CH3OH   					# Species to consider
+fileobs     = ch3oh_b5.in				# Input obs file
+prefix      = b5_ch3oh_					# Prefix of output files
+choice_y    = kelvin   					# Unit of intensity: "kelvin" for main-beam temperatures (moment 0 unit: K km/s) or "jansky" for fluxes (moment 0 unit: Jy km/s)
+choice_data = online   					# Where to look for spectro data (local or online)
+database    = jpl     					# Spectroscopic database: jpl or cdms
+source_lon  = 03h47m41.6        		# Longitude of reference source coordinates
+source_lat  = +32d51m54s        		# Latitude of reference source coordinates
+threshold   = 4. 						# Threshold in steps of rms over which transitions are included in the rotational diagram
