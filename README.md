@@ -1,7 +1,7 @@
 # coldens_map
 Python routine that creates total column density and rotational temperature maps from a series of moment 0 maps of the same molecule using a standard rotational diagram analysis (LTE analysis, optically thin emission) similar to what is used in synth_spect.py.
 
-The routine reads the input.in main input file and an associated text file listing the names of the fits files. It computes the column density by reading online spectroscopic data through the JPL and CDMS databases. Two examples are given here: CH3OH transitions towards the Barnard 5 molecular clouds as observed with the IRAM 30m telescope and towards the NGC1333-IRAS4A low-mass protostar as observed with the Plateau de Bure interferometer. 
+The routine reads the input.in main input file and an associated input text file listing the names of the fits files, and associated properties (the transition frequency, the rms noise of the map, and the major/minor axes of the interferometer beam). It computes the column density by reading online spectroscopic data through the JPL and CDMS databases. Two examples are given here: CH3OH transitions observed towards the Barnard 5 molecular clouds with the IRAM 30m single-dish telescope and towards the NGC1333-IRAS4A low-mass protostellar binary system with the Plateau de Bure interferometer. 
 
 
 ## input.in
@@ -9,7 +9,7 @@ The routine reads the input.in main input file and an associated text file listi
 The input parameters read by coldens_map.py are the following:
 
 - species: Species to consider as specified in jpl or cdms database
-- fileobs: Input file listing the fits files and the associated frequency
+- fileobs: Input file listing the fits files and the associated frequency, located in the input directory
 - prefix: Prefix of output files
 - choice_y: Unit of intensity, "kelvin" for main-beam temperatures (moment 0 unit: K km/s) or "jansky" for fluxes (moment 0 unit: Jy km/s)
 - choice_data: Where to look for spectro data (local or online, please specify online when first used to save data locally)
