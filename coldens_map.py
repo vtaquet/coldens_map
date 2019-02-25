@@ -107,13 +107,13 @@ print("Reading input files...")
 # check if directories exist
 if os.path.isdir('predictions') == False:
   os.system("mkdir predictions")
-if os.path.isdir('data') == False:
-  os.system("mkdir data")
+if os.path.isdir('spect_data') == False:
+  os.system("mkdir spect_data")
 if os.path.isdir('figures') == False:
   os.system("mkdir figures")
-if os.path.isdir('data/cdms') == False:
+if os.path.isdir('spect_data/cdms') == False:
   os.system("mkdir data/cdms")
-if os.path.isdir('data/jpl') == False:
+if os.path.isdir('spect_data/jpl') == False:
   os.system("mkdir data/jpl")
 
 # read input file and store input params into dictionary
